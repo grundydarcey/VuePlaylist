@@ -61,6 +61,8 @@ export default {
       this.$http.post('https://vue-playlist-f2b25-default-rtdb.firebaseio.com/posts.json', {
         title: this.blog.title,
         body: this.blog.content,
+        author: this.blog.author,
+        categories: this.blog.categories,
         userId: 1
       }).then(function(data) {
         console.log(data);
