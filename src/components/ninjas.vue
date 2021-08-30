@@ -12,16 +12,14 @@
 
 <script>
 export default {
+  props: {
+    ninjas: {
+      type: String
+    }
+  },
   data () {
     return {
-      ninjas: [
-        {name: 'Ryu', specialty: 'Vue components', show: false},
-        {name: 'Crystal', specialty: 'HTML', show: false},
-        {name: 'Hitoshi', specialty: 'Click events', show: false},
-        {name: 'Tango', specialty: 'Conditionals', show: false},
-        {name: 'Kami', specialty: 'Webpack', show: false},
-        {name: 'Yoshi', specialty: 'Data', show: false}
-      ]
+      
     }
   }
 }
